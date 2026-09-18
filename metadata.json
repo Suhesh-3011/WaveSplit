@@ -1,0 +1,6 @@
+{
+  "name": "VocalRemover & Audio Cutter",
+  "description": "Isolate and remove vocals to create clean instrumentals, and trim precision audio snippets for custom ringtones and social media.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
