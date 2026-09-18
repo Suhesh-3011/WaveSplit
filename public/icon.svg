@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded rectangle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Outer Vinyl Groove Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="6" />
+  <circle cx="256" cy="256" r="144" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="4" />
+
+  <!-- Center Core -->
+  <circle cx="256" cy="256" r="54" fill="#0f172a" />
+  <circle cx="256" cy="256" r="18" fill="#ffffff" />
+
+  <!-- Dynamic Equalizer / Audio Wave Bars -->
+  <!-- Left Side -->
+  <rect x="88" y="216" width="16" height="80" rx="8" fill="url(#glow)" />
+  <rect x="120" y="160" width="16" height="192" rx="8" fill="url(#glow)" />
+  <rect x="152" y="120" width="16" height="272" rx="8" fill="url(#glow)" />
+  <rect x="184" y="180" width="16" height="152" rx="8" fill="url(#glow)" />
+
+  <!-- Right Side -->
+  <rect x="312" y="180" width="16" height="152" rx="8" fill="url(#glow)" />
+  <rect x="344" y="120" width="16" height="272" rx="8" fill="url(#glow)" />
+  <rect x="376" y="160" width="16" height="192" rx="8" fill="url(#glow)" />
+  <rect x="408" y="216" width="16" height="80" rx="8" fill="url(#glow)" />
+</svg>

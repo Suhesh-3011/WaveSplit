@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sliders, Scissors, Sparkles, MessageSquare, Music2, Disc } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface NavbarProps {
   activeTab: 'isolator' | 'cutter' | 'art' | 'chat';
@@ -102,6 +103,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="hidden md:inline">AI Producer Chat</span>
             <span className="md:hidden">AI Chat</span>
           </button>
+
+          {/* PWA Install in Edge / Chrome / Desktop */}
+          <div className="ml-1 pl-2 border-l border-slate-800 flex items-center">
+            <PWAInstallButton />
+          </div>
         </nav>
       </div>
     </header>

@@ -1,0 +1,13 @@
+services:
+  web:
+    type: web
+    name: wavesplit-studio
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
